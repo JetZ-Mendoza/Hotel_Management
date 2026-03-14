@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="Anchor_1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1550.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sql.hotel_management.Controller_Main">
+   <children>
+      <Rectangle fx:id="backgroundImage" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="657.0" layoutX="299.0" layoutY="193.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1257.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d11e31" height="850.0" stroke="#ed0b0d" strokeType="INSIDE" width="300.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9fff8" height="200.0" layoutX="300.0" stroke="#d9fff8" strokeType="INSIDE" width="1250.0" />
+      <Button layoutX="50.0" layoutY="350.0" mnemonicParsing="false" onAction="#roomList_Button" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: FFF9C2;" text="Room List">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="70.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOME" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="51.0" />
+         </font>
+      </Text>
+      <Button layoutX="50.0" layoutY="420.0" mnemonicParsing="false" onAction="#booking_Button" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: FFF9C2;" text="Book">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Text layoutX="580.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME BACK" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="100.0" />
+         </font>
+      </Text>
+      <Circle fx:id="profile_Circle" fill="DODGERBLUE" layoutX="150.0" layoutY="130.0" radius="100.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <ImageView fx:id="exitImage_ID" fitHeight="50.0" fitWidth="50.0" layoutX="125.0" layoutY="750.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/exit.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="indicator_ID" fill="WHITE" layoutX="4.0" layoutY="639.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="292.60003662109375">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Text>
+      <Button layoutX="50.0" layoutY="488.0" mnemonicParsing="false" onAction="#exportdata_Button" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: FFF9C2;" text="Export Data">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="CustomerInfo_Anchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1550.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sql.hotel_management.Controller_Booking">
+   <children>
+      <Rectangle fx:id="left_image" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="1000.0" layoutX="-48.0" layoutY="-75.0" stroke="BLACK" strokeType="INSIDE" width="522.0" />
+      <Rectangle fx:id="right_image" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="1000.0" layoutX="1094.0" layoutY="-75.0" stroke="BLACK" strokeType="INSIDE" width="530.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7b0000" height="850.0" layoutX="423.0" stroke="#7a00003d" strokeType="INSIDE" width="701.0" />
+      <Circle fx:id="profileCircle_ID" fill="DODGERBLUE" layoutX="780.0" layoutY="100.0" radius="86.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="585.0" layoutX="523.0" layoutY="200.0" stroke="WHITE" strokeType="INSIDE" width="499.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ccd3d9" height="110.0" layoutX="523.0" layoutY="200.0" stroke="#ced4d9" strokeType="INSIDE" width="499.0" />
+      <TextField fx:id="customerName_ID" alignment="CENTER" layoutX="575.0" layoutY="250.0" prefHeight="45.0" prefWidth="400.0" promptText="Input Name" style="-fx-background-color: #E4FCFF; -fx-border-color: #000000;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="contactNumber_ID" alignment="CENTER" layoutX="630.0" layoutY="451.0" prefHeight="34.0" prefWidth="280.0" style="-fx-background-color: #E4FCFF; -fx-border-color: #000000;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="email_ID" alignment="CENTER" layoutX="630.0" layoutY="520.0" prefHeight="34.0" prefWidth="280.0" style="-fx-background-color: #E4FCFF; -fx-border-color: #000000;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="45.0" fitWidth="47.0" layoutX="753.0" layoutY="782.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/phone.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="631.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CHECK-IN DATE" textAlignment="CENTER" wrappingWidth="280.0">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="630.0" layoutY="442.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CONTACT NUMBER" textAlignment="CENTER" wrappingWidth="280.0">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="633.0" layoutY="511.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EMAIL ADDRESS" textAlignment="CENTER" wrappingWidth="280.0">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="633.0" layoutY="580.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ROOM" textAlignment="CENTER" wrappingWidth="280.0">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="577.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DETAILS" textAlignment="CENTER" wrappingWidth="400.0">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="577.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CUSTOMER NAME" textAlignment="CENTER" wrappingWidth="400.0">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#fcff82" layoutX="628.0" layoutY="830.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0917 798 0494" textAlignment="CENTER" wrappingWidth="300.0" />
+      <DatePicker fx:id="datePicker_ID" layoutX="631.0" layoutY="382.0" onAction="#getDate" prefHeight="34.0" prefWidth="280.0" style="-fx-background-color: #E4FCFF; -fx-border-color: #000000;" />
+      <ImageView fx:id="proceedButton_ID" fitHeight="54.0" fitWidth="156.0" layoutX="696.0" layoutY="714.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/proceed.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="indicator_ID" fill="RED" layoutX="523.0" layoutY="709.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="499.0">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="630.0" layoutY="650.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TIME IN" textAlignment="CENTER" wrappingWidth="140.0">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="jestaHereBrotha_IN" layoutX="632.0" layoutY="660.0" prefHeight="27.0" prefWidth="140.0" style="-fx-background-color: #E4FCFF; -fx-border-color: #000000;" />
+      <ComboBox fx:id="roomNumber_IDENTIFICATION" layoutX="631.0" layoutY="592.0" prefHeight="27.0" prefWidth="281.0" style="-fx-background-color: #E4FCFF; -fx-border-color: #000000;" />
+      <ComboBox fx:id="roomDawJet" layoutX="631.0" layoutY="592.0" prefHeight="27.0" prefWidth="281.0" style="-fx-background-color: #E4FCFF; -fx-border-color: #000000;" />
+      <Text layoutX="772.0" layoutY="650.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TIME OUT" textAlignment="CENTER" wrappingWidth="140.0">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="jestaHereBrotha_OUT" layoutX="774.0" layoutY="660.0" prefHeight="27.0" prefWidth="140.0" style="-fx-background-color: #E4FCFF; -fx-border-color: #000000;" />
+      <Button layoutX="436.0" layoutY="13.0" mnemonicParsing="false" onAction="#mainPage" style="-fx-background-color: #FFFBD4;" text="BACK TO MAIN PAGE">
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

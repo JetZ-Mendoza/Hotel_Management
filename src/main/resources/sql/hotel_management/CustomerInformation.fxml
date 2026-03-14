@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="Anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1550.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sql.hotel_management.Controller_CustomerInformation">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7b0000" height="180.0" layoutY="25.0" stroke="#7b0000" strokeType="INSIDE" width="1550.0" />
+      <Circle fx:id="circleProfile_ID" fill="DODGERBLUE" layoutX="160.0" layoutY="115.0" radius="85.0" stroke="BLACK" strokeType="INSIDE" />
+      <Rectangle fx:id="customerRect_ID" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="210.0" layoutX="450.0" layoutY="10.0" stroke="#ff000000" strokeType="INSIDE" style="-fx-opacity: .8;" width="1100.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d9d9" height="530.0" layoutX="50.0" layoutY="280.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1450.0" />
+      <Text layoutX="50.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD ON" textAlignment="CENTER" wrappingWidth="1450.0">
+         <font>
+            <Font name="Berlin Sans FB" size="60.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7b0000" height="180.0" layoutX="1125.0" layoutY="580.0" stroke="TRANSPARENT" strokeType="INSIDE" width="350.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7b0000" height="180.0" layoutX="1126.0" layoutY="387.0" stroke="TRANSPARENT" strokeType="INSIDE" width="350.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="370.0" layoutX="120.0" layoutY="390.0" stroke="BLACK" strokeType="INSIDE" width="960.0" />
+      <Text fill="WHITE" layoutX="1126.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OPTIONS" textAlignment="CENTER" wrappingWidth="350.0">
+         <font>
+            <Font name="Berlin Sans FB" size="37.0" />
+         </font>
+      </Text>
+      <Text layoutX="120.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DETAILS" textAlignment="CENTER" wrappingWidth="960.0">
+         <font>
+            <Font name="Berlin Sans FB" size="40.0" />
+         </font>
+      </Text>
+      <Text fill="#fffdfd" layoutX="1226.0" layoutY="622.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PAYMENT" textAlignment="CENTER">
+         <font>
+            <Font name="Berlin Sans FB" size="37.0" />
+         </font>
+      </Text>
+      <TextField fx:id="addON_ServiceBox" alignment="CENTER" layoutX="475.0" layoutY="499.0" prefHeight="34.0" prefWidth="524.0" style="-fx-background-color: #E4FCFF; -fx-border-color: #000000;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="addON_priceBox" alignment="CENTER" layoutX="475.0" layoutY="572.0" prefHeight="34.0" prefWidth="524.0" style="-fx-background-color: #E4FCFF; -fx-border-color: #000000;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Text layoutX="180.0" layoutY="597.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRICE" textAlignment="CENTER">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="room_ID" fill="WHITE" layoutX="454.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="customerName_ID" fill="WHITE" layoutX="454.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Name:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="contactNumber_ID" fill="WHITE" layoutX="454.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Contact Number:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="date_ID" fill="WHITE" layoutX="454.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date in:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="hour_ID" fill="WHITE" layoutX="454.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Initial Number of Hour Stay:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Button fx:id="confirm_addON" layoutX="475.0" layoutY="681.0" mnemonicParsing="false" onAction="#confirmAddOn" prefHeight="10.0" prefWidth="250.0" style="-fx-background-color: #D9D9D9;" text="CONFIRM">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="view_receipt" layoutX="1347.0" layoutY="438.0" mnemonicParsing="false" onAction="#openReceiptPopup" prefHeight="98.0" prefWidth="111.0" text="View Receipt" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="paid_button" layoutX="1209.0" layoutY="694.0" mnemonicParsing="false" onAction="#markAsPaid" prefHeight="41.0" prefWidth="182.0" text="Mark as Paid">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font></Button>
+      <Text layoutX="180.0" layoutY="524.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD ON/SERVICE">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="indicator_ID" fill="RED" layoutX="120.0" layoutY="646.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="960.0">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1131.0" layoutY="664.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mode of payment:" textAlignment="CENTER">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="modeOfPayment_ID" layoutX="1319.0" layoutY="643.0" prefWidth="150.0" />
+      <Button layoutX="1146.0" layoutY="438.0" mnemonicParsing="false" onAction="#addHours" prefHeight="42.0" prefWidth="182.0" text="Add 1 hour">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="1146.0" layoutY="494.0" mnemonicParsing="false" onAction="#addPerson" prefHeight="42.0" prefWidth="182.0" text="Add Extra Person">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7b0000" height="78.0" layoutX="1125.0" layoutY="294.0" stroke="TRANSPARENT" strokeType="INSIDE" width="350.0" />
+      <Button layoutX="1351.0" layoutY="302.0" mnemonicParsing="false" onAction="#mainPage" prefHeight="26.0" prefWidth="118.0" style="-fx-background-color: #FFFBD4;" text="BACK TO MAIN PAGE">
+         <font>
+            <Font name="Berlin Sans FB" size="11.0" />
+         </font>
+      </Button>
+      <Button layoutX="1351.0" layoutY="336.0" mnemonicParsing="false" onAction="#mainRoomList" prefHeight="26.0" prefWidth="118.0" style="-fx-background-color: #FFFBD4;" text="BACK TO ROOMLIST">
+         <font>
+            <Font name="Berlin Sans FB" size="11.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="1131.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PAGES" textAlignment="CENTER" wrappingWidth="111.20000000000005">
+         <font>
+            <Font name="Berlin Sans FB" size="37.0" />
+         </font>
+      </Text>
+      <Button layoutX="1249.0" layoutY="302.0" mnemonicParsing="false" onAction="#database" prefHeight="59.0" prefWidth="97.0" style="-fx-background-color: #FFFBD4;" text="DATABASE" wrapText="true">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
